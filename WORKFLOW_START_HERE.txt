@@ -1,0 +1,42 @@
+================================================================================
+🚀 PERFECT LAPTOP ↔️ RPi WORKFLOW - START HERE
+================================================================================
+
+ONE-TIME SETUP (5 minutes):
+1. nano .rpi_config              # Edit with your RPi IP/hostname
+2. ./setup_rpi_git.sh            # Setup git on RPi (follow prompts)
+3. ./quick_deploy.sh test        # Test it works
+
+DAILY USE (2 seconds):
+Edit code → Run this ONE command:
+
+    ./quick_deploy.sh test "What you changed"
+
+That's it! This command:
+✅ Commits your changes
+✅ Pushes to GitHub
+✅ Pulls on RPi
+✅ Runs detection on RPi
+✅ Retrieves output to: rpi_output_retrieved/
+
+================================================================================
+OTHER USEFUL COMMANDS:
+================================================================================
+
+./sync_to_rpi.sh "msg"           # Just sync, don't run
+./run_on_rpi.sh test             # Just run, already synced
+./get_rpi_output.sh              # Just get results
+./watch_rpi.sh                   # Auto-sync when you save files
+
+================================================================================
+COMPLETE GUIDE: See WORKFLOW_GUIDE.md
+QUICK START: See COMPLETE_WORKFLOW.md
+================================================================================
+
+EXAMPLE DAILY WORKFLOW:
+1. vim DEMO_RPI.py                           # Edit on laptop
+2. ./quick_deploy.sh test "Improved model"   # Deploy & test
+3. ls rpi_output_retrieved/                  # Check results
+4. Repeat!
+
+That's the entire workflow! ⚡

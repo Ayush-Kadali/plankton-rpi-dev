@@ -1,0 +1,19 @@
+# Cloud & Map Integration Requirements
+# Install with: pip install -r requirements_cloud_map.txt
+
+# Firebase Integration
+firebase-admin>=6.0.0
+
+# Map Visualization
+folium>=0.14.0
+branca>=0.6.0
+
+# Data Processing (likely already installed)
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Web Interface (likely already installed)
+streamlit>=1.28.0
+
+# Utilities
+python-dateutil>=2.8.0

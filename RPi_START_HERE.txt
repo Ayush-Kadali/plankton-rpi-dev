@@ -1,0 +1,120 @@
+================================================================================
+🍓 RASPBERRY PI SETUP - START HERE
+================================================================================
+
+COMPLETE SETUP (First Time):
+
+    ./setup_rpi_complete.sh
+
+This will:
+✅ Configure connection settings
+✅ Test SSH connection
+✅ Setup Git on RPi
+✅ Clone repository
+✅ Install dependencies
+✅ Test detection
+
+Follow the prompts! Takes ~15 minutes.
+
+================================================================================
+TEST CONNECTION (Anytime):
+================================================================================
+
+    ./test_rpi_connection.sh
+
+Checks:
+✅ Network connectivity
+✅ SSH access
+✅ Project files
+✅ Dependencies
+✅ Camera
+✅ Model file
+
+================================================================================
+DAILY USAGE (After Setup):
+================================================================================
+
+Edit code on laptop → Deploy to RPi:
+
+    ./quick_deploy.sh test "What you changed"
+
+This automatically:
+✅ Commits changes
+✅ Pushes to GitHub
+✅ Pulls on RPi
+✅ Runs detection
+✅ Gets results back
+
+================================================================================
+MANUAL COMMANDS:
+================================================================================
+
+# Just sync code
+./sync_to_rpi.sh "message"
+
+# Just run on RPi
+./run_on_rpi.sh test       # 30 second test
+./run_on_rpi.sh headless   # Long run, saves video
+./run_on_rpi.sh interactive # With display
+
+# Just get results
+./get_rpi_output.sh
+
+# SSH to RPi
+ssh pi@raspberrypi.local  # or your IP
+cd ~/plankton
+python3 DEMO_RPI.py
+
+================================================================================
+CONFIGURATION:
+================================================================================
+
+Edit .rpi_config to change:
+- RPI_USER (default: pi)
+- RPI_HOST (your RPi IP/hostname)
+- RPI_PROJECT_DIR (default: ~/plankton)
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+Can't connect?
+→ Check RPi is on and connected to network
+→ Try IP instead of hostname: ssh pi@192.168.1.XXX
+→ Enable SSH: sudo raspi-config → Interface → SSH
+
+Camera not working?
+→ Check cable connection
+→ Enable: sudo raspi-config → Interface → Legacy Camera
+→ Test: vcgencmd get_camera
+
+Dependencies missing?
+→ SSH to RPi: ssh pi@raspberrypi.local
+→ Run: cd ~/plankton && ./setup_rpi.sh
+
+Model file missing?
+→ Copy from laptop:
+→ scp "Downloaded models/best.pt" pi@raspberrypi.local:~/plankton/Downloaded\ models/
+
+================================================================================
+COMPLETE GUIDES:
+================================================================================
+
+RPi_COMPLETE_SETUP.md   - Step-by-step setup guide
+RPi_GUIDE.md            - Detailed reference
+WORKFLOW_GUIDE.md       - Development workflow
+
+================================================================================
+QUICK START:
+================================================================================
+
+1. Connect RPi to network
+2. Find IP: ping raspberrypi.local
+3. Run: ./setup_rpi_complete.sh
+4. Follow prompts
+5. Test: ./quick_deploy.sh test "First test"
+6. Done!
+
+================================================================================
+YOU'RE READY! 🚀
+================================================================================

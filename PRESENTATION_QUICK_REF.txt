@@ -1,0 +1,96 @@
+================================================================================
+🎓 PRESENTATION QUICK REFERENCE CARD
+================================================================================
+
+FASTEST START (FOR JUDGES):
+    ./PRESENTATION_DEMO.sh
+    → Press 1 (Professional Demo)
+    → Press 1 (Good Flow video)
+    → Let it run!
+
+OR DIRECT COMMAND:
+    python3 DEMO_PROFESSIONAL.py --source "Real_Time_Vids/good flow.mov"
+
+CONTROLS DURING DEMO:
+    'q' = Quit
+    's' = Screenshot
+    'r' = Reset statistics
+
+================================================================================
+WHAT JUDGES WILL SEE:
+================================================================================
+✅ Real-time video with bounding boxes
+✅ Species labels with confidence scores
+✅ Live statistics dashboard
+✅ Detection rate graph
+✅ Species distribution chart
+✅ FPS counter
+✅ Professional UI (looks complete!)
+
+================================================================================
+KEY TALKING POINTS (30 SECONDS EACH):
+================================================================================
+
+1. INTRODUCTION:
+   "Marine Plankton AI Monitoring System - real-time, automated, accurate"
+
+2. DETECTION:
+   "AI detects and classifies 6 species in real-time with bounding boxes"
+
+3. DASHBOARD:
+   "Live analytics showing species distribution and detection trends"
+
+4. FLEXIBILITY:
+   "Model-agnostic system - works with any AI model, no code changes"
+
+5. APPLICATIONS:
+   "Perfect for research, aquaculture, environmental monitoring"
+
+================================================================================
+DEMO FLOW (5 MINUTES):
+================================================================================
+0:00-0:15  Introduction
+0:15-2:00  Run professional demo, explain features
+2:00-3:00  Show model comparison OR continue detection
+3:00-4:00  Show map visualization
+4:00-5:00  Wrap-up and Q&A
+
+================================================================================
+BACKUP COMMANDS:
+================================================================================
+Quick demo:        python3 DEMO.py --source "Real_Time_Vids/good flow.mov"
+Comparison:        python3 DEMO_COMPARISON.py --models "Downloaded models/best.pt" "Downloaded models/yolov8n.pt" --source "Real_Time_Vids/good flow.mov"
+Map:               python3 MAP_VIEWER.py --open
+
+================================================================================
+PRE-DEMO CHECKLIST:
+================================================================================
+□ Test: ./PRESENTATION_DEMO.sh
+□ Battery charged
+□ Videos accessible
+□ Close unnecessary apps
+□ Deep breath - you got this! 💪
+
+================================================================================
+WHY JUDGES WILL BE IMPRESSED:
+================================================================================
+✅ Professional UI (not a prototype!)
+✅ Real-time performance (20-30 FPS)
+✅ Complete system (detect → analyze → visualize)
+✅ Multiple features (stats, graphs, maps)
+✅ Production-ready (looks finished!)
+✅ Flexible (model-agnostic)
+✅ Practical (real applications)
+
+================================================================================
+REMEMBER:
+================================================================================
+→ Speak confidently
+→ Let demo run smoothly
+→ Point out features as they appear
+→ Smile!
+→ You built something IMPRESSIVE! 🏆
+
+================================================================================
+GOOD LUCK! 🚀
+================================================================================

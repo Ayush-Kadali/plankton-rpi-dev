@@ -1,0 +1,9 @@
+# RPi Configuration File
+# Edit these values for your setup
+
+RPI_USER="pi"
+RPI_HOST="raspberrypi.local"
+RPI_PROJECT_DIR="~/plankton"
+
+# Git settings
+GIT_BRANCH="main"
