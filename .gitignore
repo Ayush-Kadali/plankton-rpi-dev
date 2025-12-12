@@ -40,11 +40,7 @@ results/*.json
 results/*.html
 !results/.gitkeep
 
-# Models (keep placeholders, ignore large files)
-models/*.tflite
-models/*.onnx
-models/*.h5
-models/*.pb
+# Models (tracked with Git LFS)
 !models/.gitkeep
 
 # Jupyter Notebooks
@@ -112,5 +108,4 @@ rpi_output_retrieved/
 Real_Time_Vids/*.mov
 Real_Time_Vids/*.mp4
 
-# Downloaded models (large files)
-Downloaded models/*.pt
+# Note: Model files now tracked with Git LFS
